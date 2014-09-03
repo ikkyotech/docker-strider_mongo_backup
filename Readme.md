@@ -3,7 +3,7 @@ This extension to the [strider_simple](https://registry.hub.docker.com/u/ikkyote
 To launch an instance you have to pass in your AWS credentials as environment variables like:
 
 ```
-$ docker run -p 3000:3000 \
+$ docker run strider_mongo_backup -p 3000:3000 \
     -e BACKUP_S3_BUCKET="<your bucket>" \
     -e BACKUP_S3_PREFIX="strider_" \
     -e AWS_ACCESS_ID="<access key>" \
